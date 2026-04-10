@@ -1,0 +1,245 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Datatype:wght@100..900&family=Electrolize&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Sets all elements to border-box and removes default spacing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Remove defualt style */
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  columns: inherit;
+  color: black;
+}
+/* Body */
+body {
+  margin: 0px;
+  background-color: #e5e5e5;
+  font-size: 14px;
+  font-family:
+    "anta" Arial,
+    Helvetica,
+    sans-serif;
+  color: #212832;
+  line-height: 1.5;
+}
+/* Header */
+.header {
+  position: sticky;
+  padding: 20px 10%;
+}
+.header-container {
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+.navbar-lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.navbar-lists a {
+  font-size: 18px;
+  color: #212832;
+  transition: 0.3s;
+}
+.navbar-lists a:hover {
+  color: #df6951;
+}
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.login a {
+  font-size: 18px;
+  color: #5e6282;
+  transition: 0.3s;
+}
+.login button {
+  font-size: 14px;
+  border: 1px solid #df6951;
+  border-radius: 6px;
+  padding: 6px 12px;
+  background-color: #e5e5e5;
+  color: #5e6282;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.login button:hover {
+  background-color: #df695133;
+  color: #5e6282;
+  /* transform: translateY(-3px); */
+}
+
+/* Main */
+.main {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Hero Section */
+section {
+  margin-bottom: 100px;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-info {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-info h1 {
+  font-size: 16px;
+  color: #df6951;
+}
+.hero-info h2 {
+  width: 80%;
+  font-size: 68px;
+  line-height: 1.2;
+  /* color: #5e6282; */
+}
+.hero-info p {
+  width: 60%;
+  font-size: 16px;
+  color: #5e6282;
+}
+.hero-info-btn {
+  display: flex;
+  gap: 20px;
+}
+.hero-info-btn button {
+  border-style: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#btn-find {
+  background-color: #f1a501;
+  color: #e5e5e5;
+  font-size: 14px;
+  box-shadow: 0 10px 25px #f1a5014d;
+}
+#btn-demo {
+  background-color: #df6951;
+  color: #e5e5e5;
+  box-shadow: 0 10px 25px #df69514d;
+}
+.hero-info-btn button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.hero-img img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+/* Cetegory */
+.category-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 90px;
+}
+/* Title container */
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+.title-container h1 {
+  font-size: 16px;
+  color: #5e6282;
+}
+.title-container h2 {
+  font-size: 38px;
+  color: #14183e;
+}
+.category-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.category-cards {
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  height: auto;
+  border-radius: 12px;
+  color: #14183e;
+}
+.category-cards h3 {
+  font-size: 18px;
+}
+.category-cards img {
+  width: 50%;
+}
+
+/* Top Selling */
+.selling-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 90px;
+}
+.selling-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.selling-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px ;
+}
+.selling-cards img {
+    width: 80%;
+    border-radius: 12px 12px 0px 0px;
+}
+.selling-cards-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
